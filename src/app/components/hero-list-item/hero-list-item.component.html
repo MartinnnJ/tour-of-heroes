@@ -1,0 +1,13 @@
+<div>
+  <a [routerLink]="['/hero-details', heroId]">
+    <small>
+      {{ heroPopularity }}
+    </small>
+    {{ heroName }}
+  </a>
+  <i
+    class="pi pi-trash"
+    style="color: red;font-size: 1.5rem"
+    (click)="onRemoveHero(heroId)"
+  ></i>
+</div>

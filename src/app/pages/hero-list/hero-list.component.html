@@ -1,0 +1,48 @@
+<h2>My Heroes</h2>
+
+<form
+  class="group"
+  (submit)="onFormSubmit($event, heroNameInput, heroPopularityInput)"
+>
+
+  <p-inputGroup>
+    <p-inputGroupAddon>
+        <i class="pi pi-user"></i>
+    </p-inputGroupAddon>
+    <input
+      type="text"
+      pInputText
+      placeholder="Hero Name"
+      #heroNameInput
+    />
+  </p-inputGroup>
+
+  <p-inputGroup class="w-full md:w-30rem">
+    <p-inputGroupAddon>
+      <i class="pi pi-star-fill"></i>
+    </p-inputGroupAddon>
+    <input
+      type="number"
+      pInputText
+      placeholder="Hero Popularity"
+      min="0"
+      max="9"
+      [defaultValue]="0"
+      #heroPopularityInput
+    />
+  </p-inputGroup>
+
+  <button type="submit" pButton label="Add Hero"></button>
+
+</form>
+
+<ul>
+  <li *ngFor="let hero of heroes">
+    <app-hero-list-item
+      [heroId]="hero.id"
+      [heroPopularity]="hero.popularity"
+      [heroName]="hero.name"
+      (removeHero)="onRemoveHero($event)"
+    />
+  </li>
+</ul>

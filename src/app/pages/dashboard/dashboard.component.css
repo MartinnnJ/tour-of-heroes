@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}

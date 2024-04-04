@@ -1,0 +1,33 @@
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+strong {
+  margin: 0 1rem;
+}
+
+small {
+  font-size: 25px;
+  color: grey;
+}
+
+input {
+  margin-right: 1rem;
+}
+
+.msg {
+  display: block;
+  font-size: 18px;
+  color: green;
+  margin-top: 1.5rem;
+}

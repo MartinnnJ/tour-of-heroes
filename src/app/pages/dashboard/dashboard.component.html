@@ -1,0 +1,10 @@
+<h2>Top Heroes</h2>
+
+<ul>
+  <li *ngFor="let hero of popularHeroes">
+    <app-hero
+      [id]="hero.id"
+      [name]="hero.name"
+    />
+  </li>
+</ul>

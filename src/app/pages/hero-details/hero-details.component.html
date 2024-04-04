@@ -1,0 +1,29 @@
+<div>
+  <a (click)="onNavigateBack()">&lt; Back</a>
+  <p>
+    <small>#{{ heroId }}</small>
+    <strong>{{ heroName | uppercase }}</strong>
+    Details
+  </p>
+  <div>
+    <input
+      type="text"
+      pInputText
+      placeholder="Hero Name"
+      [(ngModel)]="heroName"
+    />
+    <p-button
+      label="Save"
+      (click)="onSave(heroId)"
+    ></p-button>
+  </div>
+
+  <small
+    class="msg"
+    *ngIf="justUpdated"
+  >
+    <i class="pi pi-check"></i>
+    Hero Successfully Updated!
+  </small>
+
+</div>

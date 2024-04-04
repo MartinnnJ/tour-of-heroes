@@ -1,0 +1,31 @@
+div {
+  position: relative;
+}
+
+a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+small {
+  display: inline-block;
+  padding: .65rem 1rem;
+  margin-right: 1rem;
+  background-color: rgb(13, 100, 238);
+  color: #fff;
+}
+
+.pi {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  cursor: pointer;
+}

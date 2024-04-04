@@ -1,0 +1,29 @@
+h2 {
+  text-align: center;
+}
+
+.group {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button[type="submit"] {
+  width: 250px;
+  height: 46px;
+}
+
+ul {
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
